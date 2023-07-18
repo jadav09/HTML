@@ -9,15 +9,18 @@
          body{
             text-align: center;
          }
-         table{
-                    }
+         #t1{margin-left: 280px;
+                 }
+        #j01 {color: red; background-color: black;}
+        #j02{color: aqua; background-color: blueviolet;}
     </style>
     <body>
         <h1>12<sup>th</sup>marksheet</h1>
 
-        <table border="1" width="70%"
+        <table id="t1" border="1" width="800px"
             style="color: goldenrod; background-color: black; font-size: x-large; text-align: center;">
-            <caption style="color:orchid; text-shadow: 2px 2px black; text-align: center;" > SECONDRY & HIGHER SECONDRY EDUCA TION BORD</caption>
+            <p><b> SECONDRY & HIGHER SECONDRY EDUCATION BORD</b></p>
+
             <thead>
                 <tr>
                     <th>NO.</th>
@@ -30,9 +33,6 @@
 
                 </tr>
 
-            </thead>
-
-            <tbody>
                 <tr>
                     <td>1</td>
                     <td>gujrati</td>
@@ -80,8 +80,6 @@
 
                 </tr>
 
-            </tbody>
-            <tfoot>
                 <tr>
                     <td style="color: green;">TOTAL</td>
                     <td>---</td>
@@ -91,8 +89,49 @@
                     <td>393</td>
                     <td>1316</td>
                 </tr>
-            </tfoot>
+                <br><br>
 
-        </table>
-    </body>
-</html>
+            </table>
+            <h1>Table</h1>
+            <table id="t2" border="1"
+                style="height: 400px; width:600px; margin-left: 350px;">
+                <tr>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th>IV</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                </tr>
+                <tr>
+                    <td id="j01">H</td>
+                    <td></td>
+                    <td colspan="3" rowspan="3">piriodic table of element</td>
+                    <td></td>
+                    <td id="j02">He</td>
+                </tr>
+                <tr>
+                    <td>Li</td>
+                    <td>Be</td>
+                    <td>B</td>
+                    <td id="j02">Ne</td>
+                </tr>
+                <tr>
+                    <td>Na</td>
+                    <td>Mg</td>
+                    <td>Al</td>
+                    <td id="j02">AR</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>Ca</td>
+                    <td>Sc</td>
+                    <td>Ti</td>
+                    <td>V</td>
+                    <td>Ga</td>
+                    <td id="j02">Kr</td>
+                </tr>
+            </table>
+        </body>
+    </html>
