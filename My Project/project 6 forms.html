@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form in html</title>
+    </head>
+
+    <body>
+        <h1 style="color: blue;">fill up form</h1><br>
+        <p><b><u>Contact information :-</u></b></p>
+
+        <form>
+            <table cellspacing="20" style="text-align: left;">
+                <tr>
+                    <td>First name:-</td>
+                    <td><input type placeholder="enter your First name" required></td>
+                </tr>
+                <tr>
+                    <td>Last name:-</td>
+                    <td><input type placeholder="enter your last name" required></td>
+                </tr>
+                <tr>
+                    <td>Email:-</td>
+                    <td> <input type="email" required=""  pattern="{-.!$*}" title="uses a-z-.!$* in mail for compalsory"></td>
+                </tr>
+                <tr>
+                    <td>Mobile No.:-</td>
+                    <td><input type="text" required="" pattern="[0-9]{10}"
+                            title="Number only 10 digit....!"></td>
+                </tr>
+                <tr>
+                    <td>Adhar Card No.:-</td>
+                    <td><input type="text" required="" pattern="[0-9]{12}" title="12 digit Number Only....!"></td>
+                </tr>
+            </table>
+            <!-- table ke under form le ne se inpute informatin line  main  show karega -->
+            <!-- required lene se information dal na complsory hoga -->
+            <!-- pattern  le ne se input  kis tipe ka  hai wo hoga -->
+            <!-- titel input dal ne walo ko  show karega ki kis tip ki information dal ni hia.(display hoga) -->
+
+            <p><b><u>Gographical information:-</u></b></p>
+            <br>
+
+            States:-
+            <select>
+                <option hidden value>select your states</option>
+                <!-- hidden lene se display par option ke niche dobara select your states nahi show karga -->
+                <option value>andhar pradesh</option>
+                <option value>bihar</option>
+                <option value>chtisgatha</option>
+                <option value>gujarat</option>
+                <option value>H.P</option>
+                <option value>J&K</option>
+                <option value>M.P</option>
+                <option value>U.P</option>
+                <option value>tamilndu</option>
+            </select>
+
+            PIN:-<input type="text" placeholder="enter your pin" required
+                pattern="[0-9]{6}" title="Number Only 6digit....!">
+            Adrees:-
+        </select>
+        <textarea rows="6" cols="30"></textarea>
+        <br><br>
+            <br><br><br>
+
+            <b><u>Cast :-</u></b>
+            <input type="radio" name="1">OPEN
+            <input type="radio" name="1">SEBC
+            <input type="radio" name="1">ST
+            <input type="radio" name="1">SC
+            <!-- name value same lane se radio button clickeble hoga. -->
+            <br><br><br>
+
+            <b><u>Gender :-</u></b>
+            <input type="radio" id="MALE" name="dj" value="MALE" > MALE
+            <input type="radio" id="FEMALE" name="dj" value="FEMALE" >FEMALE
+            <br><br>
+            <p><b><u> media useses :-</u></b></p>
+            Twitter:-<input type="checkbox"><br>
+            Facebook:-<input type="checkbox"><br>
+            Instagram:-<input type="checkbox"><br>
+            WhatsApp:-<input type="checkbox">
+            <br><br>
+
+            <p><b><u>photos & singhnature :-</u></b></p>
+            <table cellpadding="10">
+                <tr>
+                    <td>Photos :-</td>
+                    <td> <input type="file"></td>
+                </tr>
+                <tr>
+                    <td>singnature :-</td>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
+
+            <p><b><i>thanks you for talking our survey!</i></b><br><br>
+
+                <center>
+                    <button>submit</button>
+                    <button>reset</button>
+                    <button>cancel</button>
+                </center>
+            </form>
+        </body>
+
+    </html>
