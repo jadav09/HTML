@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form6.3</title>
+</head>
+<style>
+</style>
+<body style="background-color:skyblue; color: white;">
+
+    <h2 style="text-align: center; color: darkblue;"><u>STUDENT REGISTRATION FORM</u></h2>
+
+    <form style="background-color:darkblue; margin-left: 250px; margin-right: 250px;">
+                <table cellspacing="6" >
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" required="" pattern="a-z A-Z" title="max 30 caracters a-z and A-Z">(max 30 caracters a-z and A-Z)</td>
+                
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" required="" pattern="a-z A-Z">(max 30 caracters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input type="text"required="" pattern="0-9">(10 digit number)</td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="radio" name="1">Male</td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td><section>
+                    <textarea name="" id cols="30" rows="5"></textarea>
+                </section></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" required="" pattern="a-z A-Z">(max 30 caracters a-z and A-Z)</td>
+
+            </tr>
+            <tr>
+                <td>PIN CODE</td>
+                <td><input type="text"required="" pattern="[0-9]{6}">(6 digit number)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" required="" pattern="a-z A-Z">(max 30 caracters a-z and A-Z)</td>
+                
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">HOBBIES</td>
+                <td>drawing<input type="checkbox">
+            singing<input type="checkbox">
+            dancing<input type="checkbox">
+            sketing<input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Others<input type="checkbox">
+                <input type="text"></td>
+            </tr>
+            </table> <br>
+
+            <table >
+            <tr>
+                <td rowspan="5" style="padding-bottom: 100px;">QUALIFICAION</td>
+                <td>SI.NO</td>
+                <td>Examination</td>
+                <td>Bord</td>
+                <td>Percentage</td>
+                <td>Year of passing</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        COURSES <br> APPLIED FOR
+
+        <input type="radio" name="1">B.A
+        <input type="radio"name="1">B.COM
+        <input type="radio"name="1">B.sC
+        <input type="radio"name="1">BCA
+
+        <div style="text-align: center;">
+        <button>Submit</button>
+        <button>Reset</button>
+    </div>
+    </form>
+
+</body>
+</html>
