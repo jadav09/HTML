@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient( to right,powderblue,purple);
+        }
+        div{
+            height: 500px;
+            width: 800px;
+            margin: 100px auto;
+            background-color:white;
+        }
+        h1{
+            background:linear-gradient( to right,powderblue,purple,blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        /* color: rgba(0, 210, 200, 0.8) ; */
+        text-align: center;
+        font-size: 50px;
+        }
+        table{
+            height: 400px;
+            width:800px;
+            text-align: left;
+            margin-left: 40px;
+        }
+input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+        button{
+            color: white;
+            padding:10px 50px;
+            background: linear-gradient( to left,purple,blue,powderblue);
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Responsive Contact Us Form</h1>
+        <form>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tr>
+                    <td><input type="text" size="40px"></td>
+                    <td><input type="text" size="40px"></td>
+    
+                </tr>
+                <tr>
+                    <th>Email Address</th>
+                    <th>Website Name</th>
+                </tr>
+                <tr>
+                    <td><input type="text" size="40px"></td>
+                    <td><input type="text" size="40px"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Write Your Massage</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" size="40px"></td>
+                </tr>
+                <tr>
+                    <td><button>SUBMIT</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+   
+</body>
+</html>
