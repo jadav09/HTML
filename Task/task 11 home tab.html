@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        header{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .a{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            line-height: 50px;
+            color:white;
+            padding-left: 10px;
+        }
+        .b{
+            height: 5px;
+            width: 100px;
+            background-color:purple;
+            opacity: 0;
+            margin-left: -100px;
+            transition: 0.4s;
+        }
+        .a:hover .b{
+            opacity: 1;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="a">
+            HOME
+            <div class="b"></div>
+        </div>
+
+        <div class="a">
+            HOME
+            <div class="b"></div>
+        </div>
+
+        <div class="a">
+            HOME
+            <div class="b"></div>
+        </div>
+
+        <div class="a">
+            HOME
+            <div class="b"></div>
+        </div>
+
+        <div class="a">
+            HOME
+            <div class="b"></div>
+        </div>
+
+    </header>
+</body>
+</html>
