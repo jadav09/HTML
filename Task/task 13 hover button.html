@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+        .dj1{
+            height: 100px;
+            width: 300px;
+            background: linear-gradient(red,purple,blue);
+            border-radius: 50px;
+            color: white;
+            text-align: center;
+            line-height: 100px; 
+            margin: 100px auto;
+        }
+        .aj1{
+
+            height: 100px;
+            width: 200px;
+            background-color: white;
+            box-shadow: 10px 10px 15px,-10px -10px -15px;
+            /* border-radius: 50px; */
+            transform: translate(320px,-100px) ; 
+            opacity: 0.97;
+            
+        }
+.dj1:hover .aj1{
+margin-left: -550px;    
+transition: 0.4s;
+
+}
+        
+         
+        
+    </style>
+</head>
+<body>
+    <div class="dj1">
+        Hover Me!
+        <div class="aj1"></div>
+    </div>
+</body>
+</html>

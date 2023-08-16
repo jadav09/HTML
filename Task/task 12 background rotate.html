@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.d1{
+    height: 500px;
+    width:500px;
+    background:linear-gradient(lightgreen,blue,purple,powderblue,orange);
+    margin:100px auto;
+    transform: rotate(45deg);
+    animation: jadav 2s ease-in 0s infinite normal;
+    overflow: hidden;
+
+}
+
+.d2{
+    height:400px;
+    width:250px;
+    background-color: black;
+    transform: translate(530px ,-550px);
+    border: 10px solid rgba(255,255,255,0.95);
+    overflow: hidden;
+}
+@keyframes jadav{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+</body>
+</html>
