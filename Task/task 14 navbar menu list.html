@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            background-color: aqua;
+            font-size: 30px;
+        }
+
+        .a1 {
+            display: inline;
+            margin-left: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        a:hover{
+        background: linear-gradient(orange,white,green);
+        }
+
+/* ****************************** */
+
+        .jadav {
+            position: relative;
+        }
+
+        .y {
+            position:   absolute;
+            top: 250%;
+            left: 0px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .jadav:hover .y {
+            opacity: 1;
+            top: 100%;
+        }
+
+/* **************************** */
+        
+         .b1{
+            position: relative;
+        }
+        .z{
+            position: absolute;
+            left: 150px;
+            top:0px;
+            opacity: 0;
+        }
+        .b1:hover .z{
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <ul>
+            <li class="a1"><a href="">Home</a></li>
+            <li class="a1"><a href="">About</a></li>
+            <li class="a1 jadav"><a href="">Service</a>
+
+                <ul class="y">
+                    <li ><a href="">Service1</a></li>
+                    <li class="b1"><a href="">Service2</a>
+
+                    <ul class="z">
+                        <li><a href="">service1</a></li>
+                        <li><a href="">service2</a></li>
+                    </ul>
+                    </li>
+
+                    <li class="b1"><a href="">Service3</a></li>
+                    <li class="b1"><a href="">Service4</a></li>
+                </ul>
+            </li>
+
+            <li class="a1"><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
