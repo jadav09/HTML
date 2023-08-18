@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .d1{
+        height: 300px;
+        width: 300px;
+    }
+    .main{
+        background:url(images/bag.jpg);
+        background-size: 100% 100%;
+        
+        transform: translate(500px,200px);
+        /* overflow: hidden; */
+
+
+    }
+    
+    .box1{
+
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translate(300px,-300px);
+        transition: 0.8s;
+        opacity: 0;
+
+
+
+    }
+    .box2{
+        background-color: rgba(255, 255, 255,0.1);
+        transform: translate(-300px);
+        transition: 0.8s;
+        opacity: 0;
+
+    }
+    .main:hover .box1{
+        transform: translate(0px,0px);
+        opacity: 1;
+
+    }
+    .main:hover .box2{
+        transform: translate(0px,-300px);
+        opacity: 1;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="main d1">
+        
+        <div class="box1 d1"></div>
+        <div class="box2 d1"></div>
+
+    </div>
+    
+</body>
+</html>

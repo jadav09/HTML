@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        .main{
+            height: 400px;
+            width: 280px;
+            /* background-color: rgb(221, 151, 21); */
+            margin: 100px auto;
+            position: relative;
+
+
+        }
+        .img{
+            height: 280px;
+            background: url(images/bag-removebg-preview.png);
+            background-size: 100% 100%;
+            transform: rotateY(180deg);
+            transition: 0.8s;
+
+        }
+        .img1{
+            height: 280px;
+            background: url(images/bag-removebg-preview.png);
+            background-size: 100% 100%;
+            position: absolute;
+            transform: rotateY(-180deg);
+            transition: 0.8s;
+            backface-visibility: hidden;
+
+
+            
+        }
+        .main:hover .img{
+            transform: rotateY(0deg);
+        }
+        .main:hover .img1{
+            transform: rotateY(0deg);
+
+        }
+        .effect{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(113, 170, 151);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            transition: 0.7s;
+            
+        }
+        .main:hover .effect{
+            top: 200px;
+            opacity: 1;
+        }
+
+        .d3{
+
+        height: 100px;
+        text-align: center;
+        line-height: 1.5;
+        font-size:20px;
+        background-color: rgb(226, 68, 40);
+        }
+
+        button{
+            padding: 5px 30px;
+            background:linear-gradient(powderblue,pink,blue);
+            font-weight: bold;
+
+        }
+        .new{
+            position: absolute;
+            right: 0;
+            padding:8px;
+            background-color: rgb(221, 138, 138);
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="new">NEW</div>
+
+        <div class="img"></div>
+        <div class="img1"></div>
+
+        <div class="effect">quick view</div>
+
+        <div class="d3">
+            <p>Laptop </p>
+            <p>120 Rs <del>t 300.Off</del></p>
+            <button>conform</button>
+
+        </div>
+    </div>
+</body>
+</html>
