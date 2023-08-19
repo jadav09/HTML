@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        a{
+            height: 100px;
+            width: 100px;
+            margin: 100px auto;
+            /* background-color: green; */
+            position: relative;
+            display: block;
+            transform-style: preserve-3d;
+            text-align: center;
+            transition: 2s;
+            line-height: 100px;
+            font-size: 70px;
+        }
+
+        .front,.back,.up,.down,.right,.left{
+            height: 100px;
+            width: 100px;
+            background: goldenrod;
+            position: absolute;
+            font-weight: 60px;
+            color: white;
+            border: 2px solid black;
+            transition: 2s;
+            transform:translateZ(50px);
+        }
+        .back{
+            
+            background: gray;
+            color: powderblue;
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        .up{
+           
+            background: green;
+            transform: rotateX(180deg) translateZ(50px);
+        }
+        .down{
+
+            background: red;
+            color: burlywood;
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+           
+        
+        .right{
+            background: rgb(201, 101, 101);
+            color: black;
+            transform: rotateY(-90deg) translateZ(50px);   
+        }
+
+        .left{
+            background: rgb(201, 101, 101);
+            color: rgb(66, 57, 3);
+            transform: rotateY(90deg) translateZ(50px);}
+
+        a:hover{
+            transform: rotateY(-360deg) rotateX( 360deg);
+        }
+    </style>
+    
+</head>
+<body>
+
+    <a href="">
+        <div class="front">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+
+        <div class="back">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+
+        <div class="up">
+            <i class="fa-brands fa-facebook"></i>
+
+        </div>
+        <div class="down">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+
+        <div class="right">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        
+        <div class="left">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+
+    </a>
+
+
+</body>
+</html>

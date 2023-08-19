@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.container1 {
+    height: 550px;
+    width: 450px;
+    background: url(images/woman.jpg);
+    background-position: -50px 0px;
+    border: 10px solid rgba(255, 240, 190, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: translate(100px, 50px);
+
+}
+
+.container1:hover {
+    background-position: 0px 0px;
+
+}
+.container1:hover .child-container{
+    opacity: 1;
+    border: 6px solid white;
+    transition: 0.3s;
+}
+
+.child-container {
+    height: 500px;
+    width: 400px;
+    opacity: 0;
+
+}
+
+.h3 {
+    color: white;
+    margin: 90px 0 0 300px;
+    font-size: 30px;
+}
+
+.h3::first-letter {
+    color: red;
+}
+
+.p1 {
+    word-spacing: 10px;
+    letter-spacing: 20px;
+    font-size: 25px;
+    color: white;
+    margin: 50px 0 0 100px;
+}
+
+/**container2*/
+
+.container2 {
+    height: 600px;
+    width: 600px;
+    transform: translate(150px, 50px);
+
+}
+
+.d1 {
+    height: 280px;
+    width: 600px;
+    background: url(images/shoss2.jpg);
+    background-position: -50px 0px;
+    border: 10px solid rgba(255, 240, 190, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-position: -50px 0px;
+}
+
+.d2 {
+    height: 280px;
+    width: 600px;
+    background: url(images/shoss1.jpg);
+    background-position: -50px 0px;
+    border: 10px solid rgba(255, 240, 190, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: translate(0px, 20px);
+    background-position: -50px 0px;
+
+}
+
+
+.child-container2 {
+    height: 200px;
+    width: 550px;
+    opacity: 0;
+
+}
+.d1:hover .child-container2{
+    opacity: 1;
+    border: 6px solid white;
+    transition: 0.5s;
+
+}
+.d2:hover .child-container2{
+    opacity: 1;
+    border: 6px solid white;
+    transition: 0.5s;
+
+
+
+}
+
+.jadav {
+    color: white;
+    font-size: 30px;
+    margin: 50px 0 0 400px;
+}
+
+.jadav::first-letter {
+    color: red;
+}
+
+.jadav1 {
+    word-spacing: 10px;
+    letter-spacing: 20px;
+    font-size: 25px;
+    color: white;
+    margin: 20px 0 0 250px;
+
+}
+.d1:hover{
+    background-position: 0px 0px;
+}
+.d2:hover{
+    background-position: 0px 0px;
+    
+}
