@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            height: 100px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .d1 li{
+            display: inline-block;
+            list-style-type: none;
+            position: relative;
+            margin-left: 50px;
+            
+
+        }
+        .d1 a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            border: 2px solid white;
+
+        }
+        .d2{
+            background-color: aqua;
+            height: 100px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+        }
+        .d2 i{
+            font-size: 50px;
+         }
+
+         .d1 li ::after{
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: red;
+            position: absolute;
+            top: 100%;
+            transition: 1s;
+            left: 0;
+
+         }
+         a:hover::after{
+            width: 100%;
+         }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="d1">
+            <li><a href="">Home</a></li>
+
+            <li><a href="">About</a></li>
+
+            <li><a href="">Meb's Wear</a></li>
+
+            <li><a href="">Women's Wear</a></li>
+
+            <li><a href="">Short Coded</a></li>
+
+            <li><a href="">Contact</a></li>
+
+        </ul>
+        <div class="d2">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
+    </header>
+</body>
+</html>
