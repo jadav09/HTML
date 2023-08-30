@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main {
+            height: 300px;
+            width: 300px;
+            margin: 200px auto;
+            position: relative;
+            
+        }
+
+        .d1 {
+            height: 300px;
+            width: 300px;
+            /* background-color: forestgreen; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 10px solid transparent;
+            border-top: 10px dotted darkorange;
+            border-radius: 50%;
+            animation: jadav 2s linear infinite;
+
+
+        }
+
+        .d2 {
+            height: 200px;
+            width: 200px;
+            /* background-color: hotpink; */
+            position: absolute;
+            top: 50px;
+            left:50px;
+            border: 10px solid transparent;
+            border-top: 10px dotted rgb(5, 220, 120);
+            border-radius: 50%;
+            animation: jadav1 2s linear infinite;
+
+
+
+        }
+        .d3 {
+
+            height:100px;
+            width :100px;
+            /* background-color:black; */
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            border: 10px solid transparent;
+            border-top: 10px dotted rgb(185, 20, 20);
+            border-radius: 50%;
+            animation: jadav 2s linear infinite;
+
+
+        }
+
+        @keyframes jadav {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        @keyframes jadav1 {
+            from{
+                transform: rotate(360deg);
+            }
+            to{
+                transform: rotate(0deg);
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+
+    </div>
+
+</body>
+
+</html>
