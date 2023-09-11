@@ -5,38 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-.d1{
-    height: 500px;
-    width:500px;
-    background:linear-gradient(lightgreen,blue,purple,powderblue,orange);
-    margin:100px auto;
-    transform: rotate(45deg);
-    animation: jadav 2s ease-in 0s infinite normal;
-    overflow: hidden;
 
-}
+       
+        .main{
+            height: 500px;
+            width: 400px;
+            background-color: green;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
 
-.d2{
-    height:400px;
-    width:250px;
-    background-color: black;
-    transform: translate(530px ,-550px);
-    border: 10px solid rgba(255,255,255,0.95);
-    overflow: hidden;
-}
-@keyframes jadav{
-    from{
-        rotate: 0deg;
-    }
-    to{
-        rotate: 360deg;
-    }
-}
+
+        }
+        .d1{
+            height: 900px;
+            width: 900px;
+            background:linear-gradient(red,green,yellow,purple,powderblue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transition: 1s;
+        }
+        .d2{
+            height: 450px;
+            width: 350px;
+            background-color: black;
+            position: absolute;
+        
+        }
+        .main:hover .d1{
+            transform: rotate(360deg);
+        }
+
+
     </style>
 </head>
 
+
 <body>
+    <div class="main">
+
     <div class="d1"></div>
     <div class="d2"></div>
+
+        
+    </div>
+    
 </body>
 </html>

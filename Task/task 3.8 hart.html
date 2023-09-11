@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 300px;
+            width: 400px;
+            /* background-color: gray; */
+            margin: 200px auto;
+            display: flex;
+            animation: jadav 0.6s infinite alternate-reverse;
+        }
+        .d1,.d2{
+            height: 300px;
+            width: 200px;
+            background-color: red;
+            transform: rotate(-45deg) translateX(90px);
+            /* border-top-right-radius:100px ;
+            border-top-left-radius:100px ; */
+            border-radius: 100px 100px 0 0;
+        }
+
+         .d2{
+            transform: rotate(45deg) translateX(-90px);
+
+        }
+
+        @keyframes jadav{
+            from{transform: scale(0);}
+            to{transform:scale(0.8);}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d1"></div>
+        <div class="d2"></div>
+    </div>
+</body>
+</html>
