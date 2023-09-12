@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main{
+            height: 450px;
+            width: 450px;
+            margin: 110px auto;
+            border-radius: 50%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-width: 0px 0px 0px 0.5px;
+            animation:jadav 3s linear infinite;
+            position: relative;
+
+            
+
+        }
+        .sun{
+            height:200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 60px yellow;
+        }
+
+        .earth{
+            height: 80px;
+            width: 80px;
+            background-color: green;
+            position: absolute;
+            top: -30px;
+            left: 170px;
+            border-radius: 50%;
+            box-shadow: 0 0 50px green;
+
+        }
+        .moon{
+            height: 150px;
+            width: 150px;
+            /* background-color: gray; */
+            border-radius: 50%;
+            border:1px solid white;
+            border-width: 0 0 0 1px;
+         position: relative;
+            top: -35px;
+            left:-35px; 
+            animation:jadav1 1.5s linear infinite;
+
+        }
+        .moon1{
+            height: 30px;
+            width: 30px;
+            background-color: gray;
+            box-shadow: 0 0 10px gray;
+            border-radius: 50%;
+            position: absolute;
+            top: -15px;
+            left: 50px;
+
+        }
+
+
+         @keyframes jadav {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+        @keyframes jadav1{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="sun"></div>
+        <div class="earth">
+            <div class="moon">
+                <div class="moon1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
