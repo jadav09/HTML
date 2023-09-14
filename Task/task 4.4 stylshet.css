@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body *{
+    /* border: 2px solid; */
+
+}
+
+.new {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
+    position: relative;
+}
+.nav ul a:hover{
+    color: green;
+}
+
+/* .nav ul a::before {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: aqua;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.nav a:hover::before {
+    width: 100%;
+    opacity: 1;
+
+
+} */
+
+ul li {
+    list-style-type: none;
+    padding: 20px 100px;
+}
+
+.nav{
+    position: relative;
+}
+
+
+
+/* ******************section* men's*************** */
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* border: 3px solid red; */
+    position: absolute;
+    visibility: hidden;
+    transition: 0.5s;
+    top: 100px;
+    left: 0;
+}
+
+.section .d1 {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+/* **********section1* whomen********* */
+
+
+.section1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* border: 3px solid yellow; */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: 0.5s;
+    /* background-color: gray; */
+    visibility: hidden;
+
+}
+
+.section1 .d1 {
+    /* height: 350px; */
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.whomen:hover .section1{
+    visibility: visible;
+}
+.mens:hover .section{
+    visibility: visible;
+}
+
+
+/*******section2 bags*********** */
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* border: 3px solid powderblue; */
+    /* background-color: yellow; */
+    transition: 0.5s;
+    visibility: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.section2 .d1 {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.bags:hover .section2{
+    visibility: visible;
+}
+
+
+/* section3 footware***************/
+
+.section3{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* border: 3px solid fuchsia; */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: 0.5s;
+    /* background-color: palegreen; */
+    visibility: hidden;
+
+}
+
+.section3 .d1 {
+    /* height: 350px; */
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.footware:hover .section3{
+    visibility: visible;
+}
+
+
+
+
+
+/* ******media*********** */
+
+@media(max-width:600px)
+{
+    ul {
+        display: block;
+
+    }
+
+.d1 {
+        width: 50%;
+    }
+
+}
+
+/* **********d1************ */
+
+.d1 span {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    padding: 7px;
+    background-color: #dc3545;
+    color: wheat;
+    font-weight: bold;
+}
+
+.d1 .quick {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 20px 50px;
+    font-weight: bold;
+    transition: 1s;
+    background-color: black;
+    color: white;
+    opacity: 0;
+
+}
+
+.quck:hover {
+    background-color: aqua;
+}
+
+.d1:hover .quick {
+    transform: translateY(240px);
+    opacity: 1;
+
+}
+
+/* *********img********** */
+
+.img {
+    position: relative;
+}
+.img1,
+.img2{
+    height: 300px;
+    width: 100%;
+    transition: 1s;
+    object-fit: cover;
+}
+.img2{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    backface-visibility: hidden;
+}
+
+.img:hover .img1{
+    transform: rotateY(180deg);
+}
+
+.img:hover .img2{
+    transform: rotateY(180deg);
+}
+
+/* ******img-end****** */
+
+.content .blue {
+    color: #dc3545;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.content .p2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content button {
+    background-color: aqua;
+    font-size: 18px;
+    padding: 2px 30px;
+    border: none;
+outline: 3px solid transparent;
+
+    transition: 0.8s;
+    margin-top: 5px;
+}
+.content button:hover{
+outline: 3px solid aqua;
+outline-offset: 5px;
+}
+
+.content button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+}

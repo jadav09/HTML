@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *{
+            border: 2px solid;
+            box-sizing: border-box;
+            
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .d1{
+            width: 25%;
+        }
+        .x{
+            background: url(images/happy-smiley-face-balloons-against-colorful-cotton-royalty-free-image-1677446093.jpg);
+            background-size: cover;
+        }
+        @media(max-width:1000px)
+        {
+            .d1{
+                width: 50%;
+            }
+        }
+        @media(max-width:500px)
+        {
+            .d1{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="d1">
+            <img src="images/happy-smiley-face-balloons-against-colorful-cotton-royalty-free-image-1677446093.jpg" alt="" height="100% " width="100%">
+        </div>
+        <div class="d1 x"></div>
+        <div class="d1">
+            <img src="images/happy-smiley-face-balloons-against-colorful-cotton-royalty-free-image-1677446093.jpg" alt="" height="100% " width="100%">
+        </div>
+        <div class="d1 x"></div>
+    </div>
+</body>
+</html>
