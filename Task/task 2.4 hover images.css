@@ -30,12 +30,13 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-    transform: translate(100px, 50px);
+    transform: translate(100px, 50px) scale(1);
 
 }
 
 .container1:hover {
     background-position: 0px 0px;
+    transform: skew(2);
 
 }
 .container1:hover .child-container{
