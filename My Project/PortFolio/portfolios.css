@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 18px;
     color: white;
 }
 
@@ -24,7 +24,7 @@ a {
 .nav ul li {
     list-style-type: none;
     display: inline;
-    padding: 0px 30px;
+    padding: 0px 20px;
 
 
 
@@ -63,9 +63,9 @@ a {
 
 .text h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
     color: wheat;
-    padding: 280px 0px;
+    padding: 250px 0px;
 }
 
 
@@ -75,7 +75,8 @@ a {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 60px;
+    gap: 20px;
+    padding: 50px;
 }
 
 
@@ -93,7 +94,7 @@ a {
 
 
 .abt1 p {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 2.5;
 }
 
@@ -105,7 +106,7 @@ span {
 
 
 .abt2 p {
-    font-size: 23px;
+    font-size: 22px;
     line-height: 2.1;
     color: #4e4e4e;
 
@@ -126,13 +127,13 @@ span {
 
 
 .serv p {
-    font-size: 18px;
-    color: #4e4e4e;
+    font-size: 10px;
+    /* color: #4e4e4e; */
 }
 
 
 .serv h1 {
-    font-size: 40px;
+    font-size:28px;
 }
 
 
@@ -281,8 +282,8 @@ span {
 
 input {
     width: 90%;
-    height: 50px;
-    margin: 20px 0 0 20px;
+    /* height: 50px; */
+    /* margin: 20px 0 0 20px; */
     font-size: 20px;
 }
 
