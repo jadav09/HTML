@@ -1,0 +1,27 @@
+@media(max-width:1100px)
+{
+.serv1{
+    grid-template-columns: 1fr;
+}
+}
+
+
+@media(max-width:900px)
+{
+    .slid,
+    .about,
+    .contact,
+    .task1
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media(max-width:500px)
+{
+    .abt1{
+        grid-template-columns: 1fr;
+    }
+}

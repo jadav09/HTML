@@ -1,0 +1,59 @@
+@media(max-width:900px)
+
+{
+    .awara,
+    .section2 .icon,
+    .icon2,
+    .section7 img
+    {
+        width: 45%;
+    }
+
+
+
+    .easy-demo,
+    .col1
+    {
+        width: 100%;
+    }
+
+    .icon2{
+
+        width: 50%;
+    }
+
+
+}
+
+
+@media(max-width:500px)
+
+{
+    .awara,
+    .icon2,
+    .section7 img,
+    .easy-demo  
+
+    {
+        width: 100%;
+    }
+
+    .a31 img{
+        
+        display: none;
+    }
+
+    .a31 h1{
+        font-size: 90px;
+    }
+
+ 
+}
+
+@media (max-width:600px) 
+ {
+    .col1
+  {
+    width: 100%;
+  }  
+ }
