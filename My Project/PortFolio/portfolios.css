@@ -280,10 +280,10 @@ span {
 }
 
 
-input {
-    width: 90%;
-    /* height: 50px; */
-    /* margin: 20px 0 0 20px; */
+ .contact input{
+    width: 80%;
+    height: 40px;
+    margin: 20px 0 0 20px;
     font-size: 20px;
 }
 
@@ -352,6 +352,6 @@ text-align: right;
 /* padding: 20px; */
 /* color: white; */
 border-radius: 50%;
-background:#007aff;
+background:#6caaec;
 }
 
